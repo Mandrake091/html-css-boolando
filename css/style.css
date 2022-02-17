@@ -1,3 +1,4 @@
+/* Reset */
 *{
     margin:0;
     padding:0;
@@ -19,7 +20,8 @@ img{
     width: 100%;
     display: block;
     height: 350px;
-}
+} 
+/* Overlay */
 .overlay{  
     font-weight: bold;
     position: absolute;
@@ -52,17 +54,16 @@ img{
 
 .image-overlay{
     transform: scale(1.5);
-    transition: .5s ease;
+    transition: 3s ease-in;
     top:50px;
     display:none;
-    border-radius: 0 3px 3px 0;
     width: 100%;
     position: absolute;
     opacity: 0;
-    transition: .5s ease;
 }
+/* Text Style */
 p{  
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 5px;
     color:black
 }
@@ -80,28 +81,29 @@ h6{
     color: tomato;
 }
 .un-like{
-    color:rgb(0, 0, 0);
+    text-decoration: none;
     font-size: 20px;
-    box-shadow: 1px 1px 1px 1px rgb(202, 202, 202);
+    color:rgb(0, 0, 0);
     line-height: 33px;
     text-align: center;
     position: absolute;
-    bottom:5px;
-    right:10px;
+    bottom:50px;
+    right:5px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     width: 30px;
     height: 30px;
+    opacity:1;
 }
-
 .liked{
+    text-decoration: none;
     font-size: 20px;
     color:red;
     line-height: 33px;
     text-align: center;
     position: absolute;
-    bottom:50px;
-    left:5px;
+    bottom:70px;
+    right:50px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     width: 30px;
@@ -109,7 +111,7 @@ h6{
     opacity:0;
 }
 
-  .box:hover .overlay-discount,.overlay-type,.image-overlay{
+  .box:hover .overlay-discount,.overlay-type,.image-overlay, .liked{
     opacity: 1;
   }
   div>:hover .image-overlay{
